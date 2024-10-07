@@ -4,7 +4,7 @@ function getRandomPassword($length){
     $password="";
 
     for ($i=0; $i < $length ; $i++) { 
-     $index = rand(0, strlen($charachters) -1);
+     $index = random_int(0, strlen($charachters) -1);
      $password .=$charachters[$index];
     }
     return $password ;
